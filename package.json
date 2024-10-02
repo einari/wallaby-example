@@ -1,0 +1,29 @@
+{
+    "private": true,
+    "workspaces": [
+        "Source/**/*"
+    ],
+    "type": "module",
+    "scripts": {
+        "g:test": "cd $INIT_CWD && mocha --no-cache --colors --config ${PROJECT_CWD}/.mocharc.cjs"
+    },
+    "devDependencies": {
+        "@types/chai": "4.3.16",
+        "@types/chai-as-promised": "7.1.8",
+        "@types/mocha": "10.0.7",
+        "@types/node": "20.12.11",
+        "@types/sinon": "17.0.3",
+        "@types/sinon-chai": "3.2.12",
+        "chai": "4.3.7",
+        "chai-as-promised": "7.1.1",
+        "glob": "10.3.15",
+        "mocha": "10.7.3",
+        "module-alias": "2.2.2",
+        "sinon": "18.0.1",
+        "sinon-chai": "4.0.0",
+        "ts-node": "10.9.2",
+        "tsconfig-paths": "4.2.0",
+        "typescript": "5.5.4"
+    },
+    "license": "MIT"
+}

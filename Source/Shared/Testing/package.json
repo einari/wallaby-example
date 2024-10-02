@@ -1,0 +1,22 @@
+{
+    "name": "@shared/testing",
+    "version": "1.0.0",
+    "description": "",
+    "author": "",
+    "license": "MIT",
+    "repository": "",
+    "type": "module",
+    "scripts": {
+        "prepare": "yarn g:build",
+        "clean": "yarn g:clean",
+        "build": "yarn g:build",
+        "publish": "yarn g:publish",
+        "lint": "yarn g:lint",
+        "lint:ci": "yarn g:lint:ci",
+        "test": "yarn g:test",
+        "ci": "yarn g:ci",
+        "up": "yarn g:up",
+        "dev": "yarn g:dev",
+        "microservice": "yarn g:microservice"
+    }
+}

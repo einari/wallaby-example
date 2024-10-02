@@ -1,0 +1,17 @@
+{
+    "name": "something",
+    "version": "1.0.0",
+    "description": "",
+    "author": "",
+    "license": "MIT",
+    "repository": "",
+    "type": "module",
+    "scripts": {
+        "test": "yarn g:test"
+    },
+    "dependencies": {
+        "@cratis/fundamentals": "^5.5.1",
+        "@shared/testing": "1.0.0",
+        "reflect-metadata": "^0.2.2"
+    }
+}
