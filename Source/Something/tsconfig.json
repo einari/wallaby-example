@@ -8,6 +8,7 @@
     "include": [
         "**/*.ts",
         "**/*.tsx",
+        "for_UnitUnderTest",
     ],
     "references": [
         {
