@@ -47,7 +47,6 @@
         "newLine": "lf"
     },
     "exclude": [
-        "**/dist",
-        "**/for_*/**"
+        "**/dist"
     ]
 }

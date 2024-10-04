@@ -4,6 +4,11 @@
         "baseUrl": ".",
         "rootDir": ".",
         "outDir": "dist",
+        "paths": {
+            "Api/*": [
+                "Api/*"
+            ]
+        }
     },
     "include": [
         "**/*.ts",

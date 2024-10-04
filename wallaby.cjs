@@ -39,26 +39,6 @@ module.exports = function (wallaby) {
         },
 
         setup: function () {
-            const { glob } = require('glob');
-            const { addAliases } = require('module-alias');
-            const fs = require('fs');
-            const path = require('path');
-
-            const rootFolder = wallaby.projectCacheDir;
-
-            const getAliases = () => {
-                const aliases = {};
-                const searchPath = path.join(rootFolder, 'Source/**/package.json');
-                glob.sync(searchPath).forEach(packageJson => {
-                    const packageName = require(packageJson).name;
-                    aliases[packageName] = path.dirname(packageJson);
-                });
-
-                return aliases;
-            }
-            const aliases = getAliases();
-            addAliases(aliases);
-
             const mocha = wallaby.testFramework;
 
             const chai = require('chai');
@@ -86,11 +66,11 @@ module.exports = function (wallaby) {
             type: 'node',
             runner: 'node',
             params: {
-                runner: '--experimental-specifier-resolution=node --loader=' + path.join(__dirname, 'loader.js')
+                runner: '--experimental-specifier-resolution=node --loader=' + path.join(__dirname, 'loader-wallaby.js')
             }
         },
 
-        symlinkNodeModules: false,
+        symlinkNodeModules: true,
 
         workers: {
             restart: true
